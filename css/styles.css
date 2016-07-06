@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
 @import url(https://fonts.googleapis.com/css?family=Poiret+One&subset=latin,cyrillic);
-@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
 @import url(http://fonts.googleapis.com/css?family=Russo+One&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Megrim);
 body {
   margin: 0;
   padding: 0;
@@ -126,36 +126,38 @@ a:visited {
 }
 .logo_border {
   display: inline-block;
-  width: 135px;
   vertical-align: middle;
+  width: 100px;
   margin-left: 290px;
-  margin-right: 30px;
-  padding: 3px;
+  margin-right: 40px;
+  padding: 0 3px;
   border-right: 1px gray solid;
   transition: 1s;
 }
 .logo_border:hover {
   text-decoration: none;
-  background-color: white;
-  width: 170px;
+  width: 150px;
+  background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 20px 0 0px 7px rgba(55, 55, 155, 0.7);
 }
-.logo {
-  padding: 5px 20px;
+.logo_border .logo {
   width: 125px;
-  height: 70px;
   overflow: visible;
+  padding: 5px 20px;
   color: darkblue;
-  font-family: 'Shadows Into Light';
-  font-size: x-large;
-  letter-spacing: 2px;
+  font-size: 30px;
   font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 1;
 }
-.logo div {
+.logo_border .logo span {
+  font-family: 'Megrim';
+  font-size: 50px;
+}
+.logo_border .logo div {
   font-family: 'Poiret One';
   font-size: small;
-  text-align: right;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 .logo_text {
   position: relative;
@@ -163,11 +165,11 @@ a:visited {
   vertical-align: middle;
   margin-right: 20px;
   font-family: "Roboto";
+  font-size: x-small;
   font-weight: 400;
   color: darkblue;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  font-size: x-small;
 }
 .social_icons {
   display: inline-block;
