@@ -214,6 +214,9 @@ hr {
   .print_block {
     display: block;
   }
+  .print_block span {
+    color: darkblue;
+  }
   a[href]:after {
     content: none !important;
   }
@@ -244,8 +247,8 @@ hr {
     padding-left: 40px;
     margin-top: 30px;
   }
-  .experience .lukovici {
-    padding-top: 60px;
+  .experience .ambinua {
+    padding-top: 45px;
   }
   .contact {
     display: none;
