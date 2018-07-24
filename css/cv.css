@@ -61,6 +61,11 @@ hr {
   padding-left: 100px;
   padding-top: 20px;
 }
+.top .top_text h3 span {
+  display: block;
+  text-align: right;
+  font-size: medium;
+}
 .top > div:nth-child(3) {
   padding-top: 100px;
   text-align: right;

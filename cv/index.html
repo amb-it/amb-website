@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<title>CV - Vladimir Voznyi</title>
-		<meta name="description" content="Vladimir Voznyi - PHP Laravel developer" />
+		<meta name="description" content="Vladimir Voznyi - PHP developer" />
 		<meta name="author" content="Vladimir Voznyi - Ambit Studio" />
 		<link rel="shortcut icon" href="../imgs/favicon.ico">
 
@@ -29,10 +29,10 @@
 			</div>
 
 			<div class="trigger_block">
-				<button class="btn btn-default" onclick="window.downloadFile('CV_PHP_developer_Vladimir_Voznyi.pdf')";><i class="fa fa-file-pdf-o"></i></button>
-				<button class="btn btn-default" onclick="window.print()"><i class="fa fa-print"></i></button>
-				<button class="btn btn-default" disabled="disabled" id="full">full version</button>
-				<button class="btn btn-info" id="short">short version</button>
+				<button class="btn btn-default" id="btn_download" data-toggle="tooltip" data-placement="bottom" onclick="window.downloadFile('CV_PHP_developer_Vladimir_Voznyi.pdf')" title="download CV"><i class="fa fa-file-pdf-o"></i></button>
+				<button class="btn btn-default" data-toggle="tooltip" data-placement="bottom" onclick="window.print()" title="print CV"><i class="fa fa-print"></i></button>
+				<button class="btn btn-default" disabled="disabled" id="full" data-toggle="tooltip" data-placement="bottom" title="show extended CV">full version</button>
+				<button class="btn btn-info" id="short" data-toggle="tooltip" data-placement="bottom" title="show brief CV">short version</button>
 			</div>
 
 			<div class="row top">
@@ -40,15 +40,15 @@
 					<img src="../imgs/vladimir_voznyi.png">
 				</div>
 				<div class="col-sm-6 top_text">
-					<h4>Hello, <b>my name is Vladimir</b>,</h4>
+					<h4>Hello, <b>my name is Vladimir Voznyi</b>,</h4>
 					<h4>and I am looking for job as</h4>
-					<h1>PHP Laravel developer</h1>
+					<h1>PHP developer</h1>
 
-					<div>several words about me:</div>
-					<h3>I passionate about creating functional and beautiful web&nbsp;sites</h3>
+					<div>about me:</div>
+					<h3>I passionate about creating functional and beautiful applications <br /> <span>and I have been doing it for <b>2.5 years (experience)</b></span></h3>
 
-					<div>and my porpose now is</div>
-					<h3 class="purpose">to get stuck in an interesting project(s) and to get invaluable experience of creating high-quality intense web applications as a part of smart professional team;</h3>
+					<div>and my purpose now is</div>
+					<h3 class="purpose">to get into an interesting project(s) and to get invaluable experience of creating high-quality intense web applications as a part of smart professional team;</h3>
 				</div>
 				<div class="col-sm-3">
 					<div>
@@ -67,25 +67,31 @@
 				</div>
 				<div class="col-sm-7">
 					<h4>back-end</h4>
-					<p><i>I develop applications on </i> Laravel <i> and I use dependency manager</i> Composer <i>. I know how to work with </i> Eloquent ORM, routing, middleware, controllers, Blade Templates, Artisan console <i> and so on and so far.</i></p>
-					<p><i>I create </i> RESTful <i> applications and I know what is </i> RESTful API <i> and what for there is </i> JSON <i>.</i></p>
-					<p><i>I can write applications on row </i> PHP <i>using </i> OOP <i>and </i> MVC <i>pattern or </i> procedural approach <i>.</i></p>
-					<p><i>I can create/modify databases based on </i> MySQL <i>and </i> SQLite <i>and write </i> SQL <i> queries.</i></p>
-					<p><i>I know how to work with PHP servers </i> Apache <i>or </i> Nginx <i>(how to work with </i> mod_rewrite <i>, how to set up local server and so on).</i></p>
-					<p><i>I work with </i> Unix terminal <i>.</i></p>
-					<p><i>And I use </i> GIT <i>as version control system.</i></p>
-					<p><i>I have basic knowledges of </i> Node.js <i>.</i></p>
+					<p><i>I develop applications on </i> Laravel <i>, </i> Phalcon <i>and </i> YII 2 <i> and I use </i> Composer</p>
+					<p><i>I can write applications on raw </i> PHP <i>using </i> OOP <i>and </i> MVC <i>pattern or </i> procedural approach<i>, but I prefer frameworks.</i></p>
+					
+					<p><i>I work with relational DBMSs: </i> MySQL, MariaDB <i>and </i> SQLite <i> and I write raw </i> SQL <i> queries with joins, grouping and so on</i></p>
+					<p><i>And I use </i>Memcached <i>and</i> Redis <i>as no-SQL storage</i></p>
+
+					<p><i>As a test frameworks I use </i> PHPUnit <i> and </i> Codeception <i>.</i></p>
+					<p><i>I know how to work with</i> Nginx <i> and </i> Apache <i> web servers</i></p>
+					<p><i>I am </i>Linux (Ubuntu) <i> user and I know what is</i> bash <i>and how to work in a</i> terminal<i>.</i></p>
+					<p><i>And I use </i> GIT <i>as version control system and I worked with</i> SVN<i>.</i></p>
+					<p><i>I worked with </i>Docker (+ docker-compose) <i> and </i> Vagrant</p>
+					<p><i>I worked with </i>OpenCart<i>, </i>October CMS <i>and I wrote plugins for </i> WordPress <i>and Opencart</i></p>
+					<p><i>Also I worked with </i>API<i>s: </i> Amazon AWS <i>(domains registration)</i>, Google Maps, VK <i>, </i>Facebook<i> and others.</i></p>
+					<!-- <p><i>I worked with </i> Google Maps API <i> and</i> social networks API (vk and facebook)<i>.</i></p> -->
 
 					<h4 class="frontend">front-end</h4>
-					<p><i>I write UI on </i> html <i>and </i> css <i>(including new tags and possibilities of </i> html5 <i>and </i> css3 <i>such as animations, video, working with svg, semanthic tags and so on), I use </i> Bootstrap <i>, I work with preprocessor CSS - </i> LESS <i>, write</i> GULP <i> tasks, use</i> npm <i> dependency manager</i></p>
-					<p><i>I write front-end logic on </i> javascript <i> and use</i> JQuery <i> library and libraries based on it and I know how to work with</i> AJAX <i> requests and I know what is</i> XML <i>.</i></p>
+					<p><i>I write UI on </i> html5 <i>and </i> css3 <i>(including new tags and possibilities such as animations, video, svg, semanthic tags and so on), I use </i> Twitter Bootstrap <i>, I work with preprocessor CSS - </i> LESS <i>, write</i> GULP <i> tasks, use</i> npm <i> dependency manager</i></p>
+					<p><i>I write front-end logic on pure </i> JavaScript <i> and use</i> JQuery <i> and libraries based on it and I know how to work with</i> AJAX <i>.</i></p>
+					<p><i>And currently I learn Vue.js</i></p>
 
 					<h4>other skills</h4>
+					<p><i>My </i>English <i> level is</i> upper intermediate</p>
+					<p><i>I use </i> PHPStorm <i> IDE and</i> Sublime Text <i> for coding and I used </i> XDebug <i> for debugging</i></p>
 					<p><i>I have core knowledges of </i> SEO <i>, I know how to work with </i> Google Analitics <i>and</i> Webmaster tools <i>.</i></p>
-					<p><i>I worked with </i> Google Maps API <i> and</i> social networks API <i> (vk and facebook).</i></p>
-					<p><i>As for my </i> English <i> - it is not perfect, but this CV is written by me without any help and I can speak English almost</i> fluent<i>ly and I read a lot of technical literature in English so I can say my level is real </i> upper-intermediate<i>.</i></p>
-					<p><i>I use </i> PHPStorm <i> IDE and</i> Sublime Text <i> for coding, and I use</i> OpenServer <i> as local PHP server.</i></p>
-					<p><i>I edit pictures with </i> Photoshop <i> and some other photo and video editors.</i></p>
+					<p><i>I edit pictures with </i> Photoshop, Pinta <i> and some other photo and video editors.</i></p>
 				</div>
 			</div>
 
@@ -94,65 +100,151 @@
 			<div class="row experience">
 				<div class="col-sm-3">
 					<h3>My experience:</h3>
+					<div><small>Total:</small> 2.5 years</div>
 				</div>
 				<div class="col-sm-7">
 					<p class="date">
-						January 2015 - today (1.5 years)
+						June 2017 - December 2017 (7 months)
 					</p>
 					<p>
-						I have been working in freelance as a web sites developer (PHP, Laravel, javscript).
+						PHP developer <i>in</i> <a href="http://atticlab.net/" target="_blank">AtticLab</a><i><small> - financial sowtware development.</small></i>
 					</p>
+					<p><i><small>I took part in 3 projects:</small></i></p>
+					<hr>
 
-					<p><i>During this time </i> I have developed 6 web sites. <i> And I want to accent that </i> all sites below are made by me 100% <i> starting from concept, design and ending to developing database architecture and coding all logic.</i></p>
+					<div>
+						<p><a href="http://coinlancer.io" target="_blank"><i class="fa fa-link"> </i> Coinlancer MVP </a> <i> - is a freelancers exchange with cryptocurrency payments and SmartContract technology. I made API for Vue.js frontend</i></p>
+						<p class="text-right">Phalcon, Docker, MySQL, Memcache, JWT</p>
+					</div>
+					<hr>
+
+					<div>
+						<p>Wordpress (WooCommerce) and Opencart plugins <i> - payment gateways for Coinslot (cryptocurrencies payments)</i></p>
+						<p class="text-right">WordPress, Opencart, cURL</p>
+					</div>
+					<hr>					
+
+					<div>
+						<p>AWS domains<i> - I made service of registering domains from</i> Amazon Web Services <i>for company's client.</i></p>
+						<p class="text-right">Yii 2, Docker, API, Basic Auth, AWS</p>
+					</div>
+					<hr>
+					<hr>
+					<hr>
+
+
+					<p class="date">
+						February 2017 - May 2017 (4 months)
+					</p>
+					<p>
+						Freelance  <a href="#"></a> <i>During this time I've made internet shop and was engaged in self-development and trainig:</i>
+					</p>
+					<hr>
+
+					<div>
+						<p><a href="http://floks.com.ua" target="_blank"><i class="fa fa-link"> </i> floks.com.ua </a> <i> - internet shop on OpenCart, where I improved CMS checkout logic, made design and responsive markup, added and customized several modules.</i>
+					</div>
+					<hr>
+
+					<div>
+						<p>
+							<i>What did I do else:</i>
+							<ul>
+								<li><i>Have become </i>Ubuntu<i> user</i></li>
+								<li><i>Studied theory: </i>design patterns, SOLID, SQL (indexes, transactions), PHP7 <i>etc.</i></li>
+							</ul>
+						</p>
+					</div>
+					<hr>
+					<hr>
+					<hr>
+
+
+					<p class="date">
+						August 2016 - Fabruary 2017 (7 months)
+					</p>
+					<p>
+						Full stack web developer <i>in</i> <a href="http://d2.digital" target="_blank">D2.digital</a><i><small> - digital agency with directions: web sites, mobile applications and several own startups</small></i>
+					</p>
+					<p><i><small>I took part in 4 projects:</small></i></p>
+					<hr>
+
+					<div>
+						<p><a href="http://1042284.ambit.web.hosting-test.net" target="_blank"><i class="fa fa-link"> </i> LD </a> <i> - project consists of 4 modile apps and a web app for promoters of JTI cigarette company. <small>How it works - </small> promoters with tablets and with mobile apps gather information about smokers and send it to server where it is retained in db. Then managers can see summary information organized in a tables about promoters, smokers, traders and so on.</i> I made back end for mobile apps and the whole web app. <i>Key complexities:</i> CORS middleware, raw SQL queries with joins and complex aggregation functions, XLS upload, multi auth, date filter etc.</p>
+						<small><i>login - admin@email.com | password - admin</i></small>
+						<p class="text-right">Laravel + Bootstrap + jQuery</p>
+					</div>
+					<hr>
+
+					<div>
+						<p><a href="" style="pointer-events: none;"><i class="fa fa-link"></i> Parent Club </a> <i> - web site that offers parents to make use of services of some private companies that fit their children depending on age, sex and season. I made most of this project except several features. Key complexities:</i> multi auth for parents and for companies, facebook auth, AJAX photo uploader and so on.</p>
+						<p class="text-right">Laravel + Bootstrap + jQuery</p>
+					</div>
+					<hr>
+
+					<div>
+						<p><a href="http://d2.digital/project/pure_line.html" target="_blank"> <i class="fa fa-link"></i> Чистая линия </a> <i> - web showcase of company products.</i> I customized CMS and integrated layouts.</p>
+						<p class="text-right">OpenCart</p>
+					</div>
+					<hr>
+
+					<div>
+						<p><a href="http://d2.digital/page/axe_tattoo" target="_blank"> <i class="fa fa-link"></i> Axe Tattoo </a> <i> - mobile app that add tattoo to a picture. I made several feaures such as</i> social networks auth <i>and some other logic.</i></p>
+						<p class="text-right">Laravel</p>
+					</div>
+					<hr>
+					<hr>
+
+					<p class="date">
+						June 2015 - August 2016 (1 year)
+					</p>
+					<p>Freelance<a href="#"></a><i> - I worked as a web sites developer (PHP, Laravel, javscript).</i>
+					</p>
+					<p><small><i>During this time </i> I have developed 6 web sites. <i> And I want to accent that </i> all sites below are made by me 100% <i> starting from concept, design and ending to developing database architecture and coding all logic.</i></small></p>
 
 					<hr>
 
 					<div>
-						<p><a href="http://micta.info" target="_blank"> <i class="fa fa-link"> </i> micta.info </a> <i> - site of interesting and useful places that can be added by usual authorised users and modified by administrator in admin panel. List of places that is shown to user depends on smart filters and these pages are formed in a way to be relevant to Google requests. </i></p>
+						<p><a href="http://784460.ugov.web.hosting-test.net/" target="_blank"> <i class="fa fa-link"> </i> mista.info </a> <i> - site of interesting and useful places that can be added by usual authorised users and modified by administrator in admin panel. List of places that is shown to user depends on smart filters and these pages are formed in a way to be relevant to Google requests. </i></p>
 						<p>Site is built on Laravel, has MySQL database, has functional of uploading and sizing pictures, authentication, comments system, has javascript AJAX voting block and a lot of smart logic.</p>
-						<p><i><small>Notice: site is in beta version, and has only few added places (in town Obuhov) but main functional is working and site is waiting for several revesions and some start promotion</small></i></p>
+						<p><i><small>Notice: as I don't have time on it I stoped to pay for hosting so now it is not working</small></i></p>
 					</div>
-					
+					<hr>
+
+					<div>
+						<p><a href="http://ziminadesign.com.ua" target="_blank"><i class="fa fa-link"></i> ziminadesign.com.ua </a><i> - site for interior designer.</i></p>
+						<p>It is landing page, with responsive design and some animations such as sliding menu, smooth scroll, parallax, Ken Burns effect and so on. And I made blog on October CMS.</p>
+					</div>
 					<hr>
 
 					<div>
 						<p><a href="http://lukovici.com.ua" target="_blank"> <i class="fa fa-link"></i> lukovici.com.ua </a> <i> - site-catalog for flower bulbs big distributor.</i></p>
 						<p>It is built on Laravel, has SQLite database, has convenient admin panel for adding and editing content, has filter of bulbs by letters, has responsive design and functional of sending letters from site with captcha and AJAX request/response.</p>
 					</div>
-
 					<hr>
 
 					<div class="ambinua">
 						<p><a href="http://amb.in.ua" target="_blank"><i class="fa fa-link"></i> amb.in.ua</a> <i>  - landing page of my web studio.</i></p>
 						<p>It has responsive design and a lot of animation such as preloader, sliding menu, animated SVG menu button, Ken Burns effect of background picture, parallax effect, smooth scrolling, customized Google Maps and so on.</p>
 					</div>
-
 					<hr>
 
 					<div>
 						<p><a href="http://pastrans.com.ua" target="_blank"><i class="fa fa-link"></i> pastrans.com.ua </a><i> - site for logistic company</i></p>
 						<p>Site is written on row PHP. As background added footage and it has responsive design.</p>
 					</div>
-
 					<hr>
 
 					<div>
 						<p><a href="http://turdvir.com.ua" target="_blank"><i class="fa fa-link"></i> turdvir.com.ua </a><i> – site for recreation center at the Carpathian mountains.</i></p>
 						<p>Site is written on row PHP. It is made on 4 languages. And has 3D flash plugin.</p>
 					</div>
-
 					<hr>
-
-					<div>
-						<p><a href="http://ziminadesign.com.ua" target="_blank"><i class="fa fa-link"></i> ziminadesign.com.ua </a><i> - site for interior designer.</i></p>
-						<p>It is landing page, with responsive design and some animations such as sliding menu, smooth scroll, parallax, Ken Burns effect and so on.</p>
-					</div>
-
 					<hr>
 
 					<div>
 						<p class="date">September 2011 - January 2015</p>
-						<p><i>I worked as </i> industrial automation engineer <i> at company </i> UGOV-Proekt <i> <small>(www.ugov.com.ua)</small> </i></p>
+						<p><i>I worked as </i> industrial automation engineer <i> at company </i><a href="http://ugov.com.ua" target="_blank"> UGOV-Proekt </a></p>
 						<p></p>
 						<p><i>I took part in developing manufactures automation projects, adjusted electrical equipment, drew electrical schemes, negotiated with clients about technical and financial affairs.</i></p>
 					</div>
@@ -171,7 +263,7 @@
 						<i>I have got </i> master degree at Kiev Polytechnical Institute <i> at the faculty of Aircraft and Spaceship Systems, but several years ago I decided that I want to create beautiful and smart web applications, so I started my</i> web development self-education <i> and up to the present time I have got knowledges of quite a number technologies and I am not going to stop.</i>
 					</p>
 					<p><i>I have passed </i> English courses <i> at "American English Center" 5 years ago.</i></p>
-					<p><i>And I took short </i> course of SEO <i> at "Akademiya SEO" half a year ago.</i></p>
+					<p><i>And I took short </i> course of SEO <i> at "Akademiya SEO"</i></p>
 				</div>
 			</div>
 
@@ -198,7 +290,7 @@
 
 		</div>
 
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 		<script src="../js/cv.js"></script>

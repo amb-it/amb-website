@@ -1,6 +1,6 @@
 $(window).load(function() {
 	$('#short').click(function() {
-		$('i').hide(1000);
+		$('i:not(.fa)').hide(1000);
 		$('.top_text div').hide(1000);
 		$('.top_text h3').hide(1000);
 		$(this).removeClass('btn-info').addClass('btn-default').attr({'disabled':'disabled'});
@@ -14,6 +14,13 @@ $(window).load(function() {
 		$(this).removeClass('btn-info').addClass('btn-default').attr({'disabled':'disabled'});
 		$('#short').removeClass('btn-default').addClass('btn-info').removeAttr('disabled');
 	});
+
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+
+    setTimeout(function() {$('#btn_download').tooltip('show');}, 1000);
+    setTimeout(function() {$('#btn_download').tooltip('hide');}, 3000);
 });
 
 
