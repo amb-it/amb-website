@@ -5,6 +5,7 @@ $(window).load(function() {
 		$('.top_text h3').hide(1000);
 		$(this).removeClass('btn-info').addClass('btn-default').attr({'disabled':'disabled'});
 		$('#full').removeClass('btn-default').addClass('btn-info').removeAttr('disabled');
+        $('#short').tooltip('hide');
 	});
 
 	$('#full').click(function() {
@@ -13,6 +14,7 @@ $(window).load(function() {
 		$('.top_text h3').show(1000);
 		$(this).removeClass('btn-info').addClass('btn-default').attr({'disabled':'disabled'});
 		$('#short').removeClass('btn-default').addClass('btn-info').removeAttr('disabled');
+        $('#full').tooltip('hide');
 	});
 
     $(function () {

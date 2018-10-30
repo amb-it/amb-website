@@ -82,6 +82,9 @@ hr {
   font-size: medium;
   margin-bottom: 10px;
 }
+.top > div:nth-child(3) a:nth-child(2) {
+  margin-bottom: 10px;
+}
 .top > div:nth-child(3) h3 {
   font-size: large;
   font-weight: bold;
