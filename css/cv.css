@@ -237,6 +237,9 @@ hr {
     top: 100px;
     right: 30px;
   }
+  .top div:nth-child(3) a:nth-child(3) {
+    display: none;
+  }
   .top h3 {
     font-size: large !important;
   }
