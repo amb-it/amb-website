@@ -21,9 +21,9 @@ a:visited {
 .trigger_block {
   position: fixed;
   right: 20px;
+  height: auto;
   text-align: right;
   background-color: white;
-  height: auto;
   z-index: 1;
 }
 .trigger_block button {
@@ -60,6 +60,9 @@ hr {
   font-weight: bold;
   padding-left: 100px;
   padding-top: 20px;
+}
+.top .top_text h1 span {
+  font-size: smaller;
 }
 .top .top_text h3 span {
   display: block;
@@ -127,6 +130,9 @@ hr {
 .experience > div:nth-child(2) a.inactive:hover {
   cursor: default;
   text-decoration: none;
+}
+.experience > div:nth-child(2) .company_name {
+  font-size: large;
 }
 .education i,
 .words i {
@@ -261,9 +267,6 @@ hr {
   .experience > div:nth-child(2) > p:nth-child(1) {
     padding-left: 40px;
     margin-top: 30px;
-  }
-  .experience .ambinua {
-    padding-top: 45px;
   }
   .contact {
     display: none;
