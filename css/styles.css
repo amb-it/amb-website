@@ -1,7 +1,51 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
-@import url(https://fonts.googleapis.com/css?family=Poiret+One&subset=latin,cyrillic);
-@import url(http://fonts.googleapis.com/css?family=Russo+One&subset=latin,cyrillic);
-@import url(http://fonts.googleapis.com/css?family=Megrim);
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(http://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxIIzc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(http://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(https://fonts.gstatic.com/s/poiretone/v8/UqyVK80NJXN4zfRgbdfbo5pcUg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Russo One'), local('RussoOne-Regular'), url(http://fonts.gstatic.com/s/russoone/v8/Z9XUDmZRWg6M1LvRYsHOy8mM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Megrim';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Megrim'), url(http://fonts.gstatic.com/s/megrim/v10/46kulbz5WjvLqJZVam_k.ttf) format('truetype');
+}
 body {
   margin: 0;
   padding: 0;
@@ -498,7 +542,7 @@ nav a:hover {
   top: 230px;
   left: 0;
   width: 50%;
-  opacity: .2;
+  opacity: 0.2;
   z-index: 1;
 }
 @media (max-width: 1000px) {
@@ -700,7 +744,7 @@ nav a:hover {
   height: 100%;
   top: -500px;
   background-color: rgba(60, 60, 140, 0.9);
-  transition: .5s;
+  transition: 0.5s;
 }
 .portfolio .row .description h3 {
   margin-top: 40px;
