@@ -4,4 +4,4 @@ One-page landing
 
 ## Documentation
 
-Link to web site of [Ambit studio](http://amb.in.ua)
+Link to website of [Ambit studio](http://amb.in.ua)
