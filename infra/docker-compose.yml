@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+
+  amb_nginx:
+    container_name: amb_nginx
+    image: nginx:alpine
+    volumes:
+      - ../app:/var/www
+      - ./nginx/conf.d/:/etc/nginx/conf.d
+    ports:
+      - "8088:80"
+    depends_on:
+      - amb_php_fpm
+
+  amb_php_fpm:
+    container_name: amb_php_fpm
+    build:
+      context: ./php-fpm
+    volumes:
+      - ../app:/var/www
