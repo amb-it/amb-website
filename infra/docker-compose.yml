@@ -5,8 +5,6 @@ services:
   amb_nginx:
     container_name: amb_nginx
     image: nginx:alpine
-    env_file:
-      - .env
     volumes:
       - ../app:/var/www
       - ./nginx/conf.d/:/etc/nginx/conf.d
